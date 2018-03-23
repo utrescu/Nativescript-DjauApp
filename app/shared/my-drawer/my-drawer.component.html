@@ -1,0 +1,20 @@
+<GridLayout rows="auto, *" class="sidedrawer sidedrawer-left">
+    <StackLayout row="0" class="sidedrawer-header">
+        <Image class="sidedrawer-header-image fa" src="~/images/logo.png"></Image>
+        <Label class="sidedrawer-header-brand" text="Institut Cendrassos"></Label>
+        <Label class="footnote" text="b7005649@xtec.cat"></Label>
+        <Label class="footnote" text="972507908"></Label>
+    </StackLayout>
+
+    <ScrollView row="1">
+        <StackLayout class="sidedrawer-content">
+            <MyDrawerItem title="Home" route="/home" icon="&#xf015;" [isSelected]="isPageSelected('Home')">
+            </MyDrawerItem>
+
+            <StackLayout class="hr-light"></StackLayout>
+
+            <MyDrawerItem title="Settings" route="/settings" icon="&#xf013;" [isSelected]="isPageSelected('Settings')">
+            </MyDrawerItem>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>
